@@ -675,6 +675,62 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonials Section (Endless Marquee River Flow) */}
+      <section className="testimonials-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-tag">Yorumlar</span>
+            <h2>Danışanlarımızın Deneyimleri</h2>
+            <div className="divider"></div>
+            <p>Google Maps üzerinden merkezimiz hakkında paylaşılan en iyi değerlendirmeler.</p>
+          </div>
+        </div>
+        
+        <div className="marquee-container">
+          <div className="marquee-content">
+            {/* Track 1 */}
+            <div className="marquee-track">
+              {[
+                { text: "Cilt bakımı ve HydraFacial seanslarından inanılmaz memnun kaldım. Cildim resmen nefes alıyor. Çalışanların güler yüzü ve ilgisi harikaydı.", author: "Derya Y." },
+                { text: "Buz lazer epilasyon seanslarım yeni bitti, dökülmelerim mükemmel seviyede. Bahçelievler 7. Cadde şubesinde hijyen standartları gerçekten çok yüksek.", author: "Merve A." },
+                { text: "Bölgesel zayıflama için G5 masajı ve pasif jimnastik paketi aldım. 4. seanstan itibaren gözle görülür sıkılaşma ve selülitlerde azalma başladı.", author: "Bahar K." },
+                { text: "Klinik ortamı inanılmaz nezih, temiz ve ferah. Kullanılan cihazlar son teknoloji ve orijinal FDA onaylı. Ankara'da tek geçeceğim güzellik merkezi.", author: "Ahmet T." },
+                { text: "Epilasyon için tavsiye üzerine gelmiştim, çok memnun kaldım. Güler yüzlü karşılama, kaliteli hizmet ve uzman kadrosuyla kesinlikle harikalar.", author: "Selin B." },
+                { text: "Bahçelievler şubesinde cilt bakımı yaptırdım. Gözeneklerim tamamen temizlendi ve cildim ışıl ışıl oldu. Herkese tavsiye ederim.", author: "Buse Ç." },
+                { text: "Uzmanların detaylı analiz yapması ve size en uygun seans planını çıkarması çok profesyonelce. Hijyene bu kadar dikkat eden başka yer görmedim.", author: "Kemal D." },
+                { text: "Merkezin konumu Bahçelievler 7. Cadde üzerinde ve ulaşımı çok kolay. İlgi, alaka ve aldığım epilasyon hizmetinden fazlasıyla memnun kaldım.", author: "Elif S." }
+              ].map((rev, index) => (
+                <div key={index} className="testimonial-card">
+                  <p className="review-text">"{rev.text}"</p>
+                  <h4 className="review-author">{rev.author}</h4>
+                  <div className="stars">★★★★★</div>
+                </div>
+              ))}
+            </div>
+            
+            {/* Track 2 (Duplicate for endless loop) */}
+            <div className="marquee-track">
+              {[
+                { text: "Cilt bakımı ve HydraFacial seanslarından inanılmaz memnun kaldım. Cildim resmen nefes alıyor. Çalışanların güler yüzü ve ilgisi harikaydı.", author: "Derya Y." },
+                { text: "Buz lazer epilasyon seanslarım yeni bitti, dökülmelerim mükemmel seviyede. Bahçelievler 7. Cadde şubesinde hijyen standartları gerçekten çok yüksek.", author: "Merve A." },
+                { text: "Bölgesel zayıflama için G5 masajı ve pasif jimnastik paketi aldım. 4. seanstan itibaren gözle görülür sıkılaşma ve selülitlerde azalma başladı.", author: "Bahar K." },
+                { text: "Klinik ortamı inanılmaz nezih, temiz ve ferah. Kullanılan cihazlar son teknoloji ve orijinal FDA onaylı. Ankara'da tek geçeceğim güzellik merkezi.", author: "Ahmet T." },
+                { text: "Epilasyon için tavsiye üzerine gelmiştim, çok memnun kaldım. Güler yüzlü karşılama, kaliteli hizmet ve uzman kadrosuyla kesinlikle harikalar.", author: "Selin B." },
+                { text: "Bahçelievler şubesinde cilt bakımı yaptırdım. Gözeneklerim tamamen temizlendi ve cildim ışıl ışıl oldu. Herkese tavsiye ederim.", author: "Buse Ç." },
+                { text: "Uzmanların detaylı analiz yapması ve size en uygun seans planını çıkarması çok profesyonelce. Hijyene bu kadar dikkat eden başka yer görmedim.", author: "Kemal D." },
+                { text: "Merkezin konumu Bahçelievler 7. Cadde üzerinde ve ulaşımı çok kolay. İlgi, alaka ve aldığım epilasyon hizmetinden fazlasıyla memnun kaldım.", author: "Elif S." }
+              ].map((rev, index) => (
+                <div key={`dup-${index}`} className="testimonial-card">
+                  <p className="review-text">"{rev.text}"</p>
+                  <h4 className="review-author">{rev.author}</h4>
+                  <div className="stars">★★★★★</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Gallery Section */}
       <section id="gallery" className="gallery-section">
         <div className="container">
