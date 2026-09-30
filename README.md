@@ -24,7 +24,7 @@ A Turkish-language, single-page website for Sevgi Medlife, a beauty centre on Ba
 - **Services** — three cards: laser hair removal, medical skin care, body contouring & G5, each with a WhatsApp "info & price" link
 - **About** section with the centre's approach and three highlight cards (expert staff, device technology, personal analysis)
 - **Animated statistics counters** that start when the section scrolls into view (`IntersectionObserver`)
-- **Testimonials marquee** — continuously scrolling customer comment cards (pure CSS animation)
+- **Testimonials marquee** — continuously scrolling review cards (pure CSS animation; text is hard-coded in `page.js`)
 - **Gallery** of the treatment rooms with a lightbox (click to open, Esc or × to close)
 - **Contact** — address, phone numbers, Instagram, working hours, a detailed contact form and an embedded Google Map
 - **Floating WhatsApp button** fixed to the corner of the screen
@@ -102,7 +102,7 @@ Ankara Çankaya'da, Bahçelievler 7. Cadde (Aşkabat Caddesi) üzerinde hizmet v
 - **Hizmetler** — lazer epilasyon, medikal cilt bakımı, bölgesel zayıflama & G5; her kartta WhatsApp "Bilgi & Fiyat Al" bağlantısı
 - Merkezin yaklaşımını ve üç öne çıkan kartı içeren **Hakkımızda** bölümü
 - Görünür olduğunda başlayan **animasyonlu istatistik sayaçları**
-- Sürekli kayan **danışan yorumları** şeridi (saf CSS animasyonu)
+- Sürekli kayan **yorum kartları** şeridi (saf CSS animasyonu; metinler `page.js` içinde sabit yazılıdır)
 - Seans odalarından oluşan, lightbox destekli **galeri** (Esc ile kapatma)
 - **İletişim** — adres, telefonlar, Instagram, çalışma saatleri, detaylı bilgi formu ve gömülü Google Haritası
 - Sayfanın her yerinde görünen **sabit WhatsApp butonu**
